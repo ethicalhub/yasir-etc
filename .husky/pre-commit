@@ -1,0 +1,8 @@
+# Format code
+npm run format:fix
+
+# Run linting
+npm run lint
+
+# Lint staged files
+npm run lint-staged
