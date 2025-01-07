@@ -8,9 +8,19 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        outfit: ['"Outfit"', "sans-serif"],
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "var(--container-padding-default)",
+          sm: "var(--container-padding-sm)",
+          md: "var(--container-padding-md)",
+          lg: "var(--container-padding-lg)",
+          xl: "var(--container-padding-xl)",
+          "2xl": "var(--container-padding-2xl)",
+        },
       },
     },
   },

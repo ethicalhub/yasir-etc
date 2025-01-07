@@ -2,20 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+*,
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  /* Container variables */
+  --container-padding-default: 1rem;
+  --container-padding-sm: 1.5rem;
+  --container-padding-md: 2rem;
+  --container-padding-lg: 4rem;
+  --container-padding-xl: 6rem;
+  --container-padding-2xl: 8rem;
 }
