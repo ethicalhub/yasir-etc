@@ -20,7 +20,7 @@ const HeroSection = () => {
           width={width}
         />
         <div>
-          <h2 className="text-xl">Yasir Ahmad Ansari</h2>
+          <h2 className="text-xl tracking-wide">Yasir Ahmad Ansari</h2>
           <p className="font-light">Frontend Developer | Next.js | Web3</p>
         </div>
       </div>
@@ -38,7 +38,7 @@ const HeroSection = () => {
       <div className="mt-4 flex items-center gap-4">
         <SocialLink />
         <Link target="_blank" href="/Yasir_Frontend_Web_Developer_Resume.pdf">
-          <Button icon={<HiOutlineDownload />} variant="secondary">
+          <Button icon={<HiOutlineDownload />} variant="primary">
             My Resume
           </Button>
         </Link>
