@@ -15,4 +15,19 @@ body {
   --container-padding-lg: 4rem;
   --container-padding-xl: 6rem;
   --container-padding-2xl: 8rem;
+
+  --primary-color: #543a14;
+  --secondary-color: #f0bb78;
+  --white-color: #fff;
+  --blue-color: #3a0ca3;
+  --dark-color: #131010;
+  --black-color: #000;
+  --light-bg-color: #f7eeed;
+  --error-color: #ef233c;
+}
+
+@layer utilities {
+  .flex-align-center {
+    @apply flex items-center;
+  }
 }

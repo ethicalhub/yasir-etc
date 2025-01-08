@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outFit.className} antialiased`}>{children}</body>
+      <body className={`${outFit.className} bg-lightBg antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

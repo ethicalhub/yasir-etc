@@ -11,15 +11,23 @@ export default {
       fontFamily: {
         outfit: ['"Outfit"', "sans-serif"],
       },
+      colors: {
+        primary: "var(--primary-color)",
+        secondary: "var(--secondary-color)",
+        white: "var(--white-color)",
+        blue: "var(--blue-color)",
+        dark: "var(--dark-color)",
+        black: "var(--black-color)",
+        gray: "var(--gray-color)",
+        lightBg: "var(--light-bg-color)",
+        error: "var(--error-color)",
+      },
       container: {
         center: true,
         padding: {
           DEFAULT: "var(--container-padding-default)",
           sm: "var(--container-padding-sm)",
           md: "var(--container-padding-md)",
-          lg: "var(--container-padding-lg)",
-          xl: "var(--container-padding-xl)",
-          "2xl": "var(--container-padding-2xl)",
         },
       },
     },
