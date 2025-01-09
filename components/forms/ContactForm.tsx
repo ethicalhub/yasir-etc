@@ -8,7 +8,7 @@ import { z } from "zod";
 import { Button } from "../uiComponent";
 
 const contactFormSchema = z.object({
-  name: z
+  username: z
     .string()
     .min(2, "Name must be at least 2 characters.")
     .max(50, "Name can't exceed 50 characters."),
@@ -34,29 +34,36 @@ const ContactForm = () => {
     resolver: zodResolver(contactFormSchema),
   });
 
-  const onSubmit = (data: ContactFormValues) => {
-    console.log("Form Submitted:", data);
+  const onSubmit = async (data: ContactFormValues) => {
+    const response = await fetch("/api/contactForm", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    console.log("response", await response.json());
     reset();
-    // You can integrate email service here (e.g., EmailJS, SendGrid)
   };
 
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className="mb-4">
-          <label htmlFor="name" className="block font-medium text-primary">
+          <label htmlFor="username" className="block font-medium text-primary">
             Name
           </label>
           <input
-            id="name"
+            id="username"
             type="text"
-            {...register("name")}
+            {...register("username")}
             className={`mt-1 w-full rounded-lg border p-3 ${
-              errors.name ? "border-error" : "border-secondary"
+              errors.username ? "border-error" : "border-secondary"
             }`}
           />
-          {errors.name && (
-            <p className="mt-1 text-sm text-error">{errors.name.message}</p>
+          {errors.username && (
+            <p className="mt-1 text-sm text-error">{errors.username.message}</p>
           )}
         </div>
 
