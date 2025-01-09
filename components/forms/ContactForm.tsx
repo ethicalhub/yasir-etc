@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -25,6 +25,11 @@ const contactFormSchema = z.object({
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const ContactForm = () => {
+  const [formMessage, setFormMessage] = useState<{
+    type: "success" | "error";
+    text: string;
+  } | null>(null);
+
   const {
     register,
     handleSubmit,
@@ -35,16 +40,35 @@ const ContactForm = () => {
   });
 
   const onSubmit = async (data: ContactFormValues) => {
-    const response = await fetch("/api/contactForm", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    try {
+      const response = await fetch("/api/contactForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    console.log("response", await response.json());
-    reset();
+      const result = await response.json();
+
+      if (response.ok) {
+        setFormMessage({ type: "success", text: "Message sent successfully!" });
+        reset();
+      } else {
+        setFormMessage({
+          type: "error",
+          text: result.message || "Failed to send message. Please try again.",
+        });
+      }
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      setFormMessage({
+        type: "error",
+        text: "An error occurred. Please try again later.",
+      });
+    }
+
+    setTimeout(() => setFormMessage(null), 5000);
   };
 
   return (
@@ -103,6 +127,7 @@ const ContactForm = () => {
           )}
         </div>
 
+        {/* Submit Button */}
         <div className="flex items-center gap-4">
           <Button
             variant="secondary"
@@ -113,6 +138,15 @@ const ContactForm = () => {
             {isSubmitting ? "Sending..." : "Send Message"}
           </Button>
         </div>
+        {formMessage && (
+          <p
+            className={`mt-4 rounded-lg bg-secondary p-2 text-lg   ${
+              formMessage.type === "success" ? "text-dark" : "text-error"
+            }`}
+          >
+            {formMessage.text}
+          </p>
+        )}
       </form>
     </>
   );
