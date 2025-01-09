@@ -8,7 +8,7 @@ const SkillSection = () => {
     <section className="flex w-full flex-col gap-8 py-24">
       {/* Skills & Services Bento Grid Section */}
 
-      <h3 className="flex-align-center gap-4 text-4xl text-primary">
+      <h3 className="section-title">
         <FaLaptopCode />
         <span>Skills & Services</span>
       </h3>
@@ -51,8 +51,10 @@ const SkillSection = () => {
 
         {/* Service Card 1 */}
         <div className="rounded-xl bg-white p-6 shadow-lg transition hover:shadow-xl">
-          <h3 className="mb-2 text-lg font-bold">Custom UI/UX Development</h3>
-          <ul className="text-sm">
+          <h3 className="mb-2 text-xl font-bold text-primary">
+            Custom UI/UX Development
+          </h3>
+          <ul className="text-sm text-dark">
             <li>
               Design and implement pixel-perfect, custom user interfaces using
               Tailwind CSS or other CSS frameworks.
@@ -63,14 +65,16 @@ const SkillSection = () => {
 
         {/* Service Card 2 */}
         <div className="rounded-xl bg-white p-6 shadow-lg transition hover:shadow-xl">
-          <h3 className="mb-2 text-lg font-bold">Full Stack Web Apps</h3>
-          <ul className="text-sm">
+          <h3 className="mb-2 text-xl font-bold text-primary">
+            Full Stack Web Apps
+          </h3>
+          <ul className="text-sm text-dark">
             <li>
               Building full-stack solutions with React, Node.js, and modern
               authentication (e.g., JWT, OAuth, OTP)
             </li>
           </ul>
-          <p className="text-sm"></p>
+          <p className="text-sm text-dark"></p>
         </div>
       </div>
     </section>

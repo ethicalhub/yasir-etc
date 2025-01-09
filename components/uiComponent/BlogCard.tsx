@@ -4,7 +4,10 @@ import React from "react";
 
 const BlogCard = ({ blog }) => {
   return (
-    <Link href={blog.link} className="rounded-lg border border-secondary">
+    <Link
+      href={blog.link}
+      className="rounded-lg border border-secondary shadow-lg hover:shadow-xl"
+    >
       <div>
         <Image
           src={blog.imageUrl}

@@ -8,7 +8,7 @@ const ContactMe = () => {
     <section className="flex w-full flex-col gap-8 py-24">
       {/* Header Section */}
       <div className="items-center justify-between gap-4 md:flex">
-        <h3 className="flex-align-center gap-4 text-4xl text-primary">
+        <h3 className="section-title">
           <MdConnectWithoutContact />
           <span>Get In Touch</span>
         </h3>

@@ -8,7 +8,7 @@ import ExperienceCard from "../uiComponent/ExperienceCard";
 const ExperienceSection = () => {
   return (
     <section className="flex w-full flex-col gap-8 py-24">
-      <h3 className="flex-align-center gap-4 text-4xl text-primary">
+      <h3 className="section-title">
         <PiStudentBold />
         <span>Work Experience</span>
       </h3>

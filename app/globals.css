@@ -30,4 +30,12 @@ body {
   .flex-align-center {
     @apply flex items-center;
   }
+
+  .section-title {
+    @apply flex-align-center gap-2 md:gap-4 lg:text-4xl text-primary md:text-3xl text-2xl;
+  }
+
+  .title-with-action {
+    @apply flex flex-col justify-between gap-4 md:flex-row md:items-center;
+  }
 }

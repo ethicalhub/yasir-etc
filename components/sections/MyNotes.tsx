@@ -9,8 +9,8 @@ import { Button } from "../uiComponent";
 const MyNotes = () => {
   return (
     <section className="flex w-full flex-col gap-8 py-24">
-      <div className="items-center justify-between gap-4 md:flex">
-        <h3 className="flex-align-center gap-4 text-4xl text-primary">
+      <div className="title-with-action">
+        <h3 className="section-title">
           <GrNotes />
           <span>My Notes</span>
         </h3>
@@ -23,7 +23,7 @@ const MyNotes = () => {
         {myNotesData?.map((notes) => {
           return (
             <Link
-              className="rounded-lg border border-secondary p-4"
+              className="rounded-lg border border-secondary p-4 shadow-lg hover:shadow-xl"
               href={notes.link}
               key={notes.id}
             >
@@ -32,7 +32,9 @@ const MyNotes = () => {
                 <h4 className="mb-2 mt-6 line-clamp-1 text-xl text-secondary">
                   {notes.title}
                 </h4>
-                <p className="line-clamp-2 text-sm">{notes.description}</p>
+                <p className="mb-4 line-clamp-2 text-sm text-dark">
+                  {notes.description}
+                </p>
               </div>
             </Link>
           );

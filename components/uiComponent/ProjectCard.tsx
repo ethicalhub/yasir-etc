@@ -19,7 +19,7 @@ const ProjectCard = ({ projectInfo }) => {
           <h2 className="mb-2 text-2xl text-secondary">
             {projectInfo.project}
           </h2>
-          <p className="mb-4 text-sm text-primary">{projectInfo.description}</p>
+          <p className="mb-4 text-sm text-dark">{projectInfo.description}</p>
 
           {/* Technologies Used */}
           <h3 className="text-lg font-semibold text-primary">

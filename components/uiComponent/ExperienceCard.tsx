@@ -7,11 +7,14 @@ const ExperienceCard = ({ data }) => {
         <p className="mb-2 text-2xl text-secondary">{data.role}</p>
         <p className="text-lg font-semibold text-primary">
           {data.company}
-          <span className="pl-2 text-sm font-normal"> ({data.location})</span>
+          <span className="pl-2 text-sm font-normal text-dark">
+            {" "}
+            ({data.location})
+          </span>
         </p>
       </div>
 
-      <div className="text-sm">
+      <div className="text-sm text-dark">
         <p>{data.duration}</p>
       </div>
 
