@@ -5,7 +5,7 @@ import { programmingSkills, tools } from "@/constants/StaticData";
 
 const SkillSection = () => {
   return (
-    <section id="services" className="section-layout">
+    <section id="sev=r" className="section-layout">
       <h3 className="section-title">
         <FaLaptopCode />
         <span>Skills & Services</span>
