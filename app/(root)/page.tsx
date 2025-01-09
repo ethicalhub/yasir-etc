@@ -7,7 +7,6 @@ import MyBlog from "@/components/sections/MyBlog";
 import MyNotes from "@/components/sections/MyNotes";
 import MyProjects from "@/components/sections/MyProjects";
 import SkillSection from "@/components/sections/SkillSection";
-import TrendingFeed from "@/components/sections/TrendingFeed";
 
 export default function Home() {
   return (
@@ -17,10 +16,8 @@ export default function Home() {
       <ExperienceSection />
       <SkillSection />
       <MyProjects />
-      <div className="grid grid-cols-2 gap-8">
-        <MyNotes />
-        <TrendingFeed />
-      </div>
+      <MyNotes />
+      {/* <TrendingFeed /> */}
 
       <MyBlog />
       <ContactMe />

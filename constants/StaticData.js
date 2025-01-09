@@ -1,3 +1,9 @@
+import { FaReact, FaUserCheck, FaEthereum } from "react-icons/fa";
+import { GoProjectRoadmap } from "react-icons/go";
+import { IoLogoJavascript } from "react-icons/io5";
+import { MdTrendingUp, MdExplore } from "react-icons/md";
+import { LuBookOpenCheck } from "react-icons/lu";
+
 export const workExperience = [
   {
     company: "Panther Protocol",
@@ -65,7 +71,6 @@ export const tools = [
   "Vercel",
   "ERC-20",
 ];
-
 export const blogs = [
   {
     id: 1,
@@ -112,7 +117,6 @@ export const blogs = [
     imageUrl: "/images/3dImage.jpg",
   },
 ];
-
 export const projectData = [
   {
     project: "BrightBells",
@@ -154,5 +158,78 @@ export const projectData = [
       liveDemo: "https://www.ethicals-lab.com/",
     },
     image: "/images/3dImage.jpg",
+  },
+];
+export const myNotesData = [
+  {
+    id: 1,
+    title: "React-etc",
+    icon: <FaReact />,
+    link: "/notes/react-etc",
+    description: "Comprehensive notes on React concepts, hooks, and patterns.",
+    tags: ["React", "Frontend", "JavaScript"],
+  },
+  {
+    id: 2,
+    title: "DSA-etc",
+    icon: <GoProjectRoadmap />,
+    link: "/notes/dsa-etc",
+    description:
+      "Data Structures and Algorithms for problem-solving and interviews.",
+    tags: ["DSA", "Algorithms", "Coding"],
+  },
+  {
+    id: 3,
+    title: "JavaScript-etc",
+    icon: <IoLogoJavascript />,
+    link: "/notes/javascript-etc",
+    description:
+      "In-depth JavaScript notes, including ES6+ features and best practices.",
+    tags: ["JavaScript", "Frontend", "Programming"],
+  },
+  {
+    id: 4,
+    title: "Blockchain-etc",
+    icon: <FaEthereum />,
+    link: "/notes/blockchain-etc",
+    description:
+      "Notes on Blockchain, smart contracts, decentralized applications, and emerging trends.",
+    tags: ["Blockchain", "DeFi", "Smart Contracts", "Web3"],
+  },
+  {
+    id: 5,
+    title: "Interview Preparation",
+    icon: <FaUserCheck />,
+    link: "/notes/interview-preparation",
+    description:
+      "Key notes and tips for technical and behavioral interview rounds.",
+    tags: ["Interview", "Preparation", "Career"],
+  },
+
+  {
+    id: 6,
+    title: "Interactive Quizzes",
+    icon: <MdTrendingUp />,
+    link: "/notes/interactive-quizzes",
+    description:
+      "Engaging quizzes to test your knowledge on various tech topics.",
+    tags: ["Quizzes", "Testing", "Learning"],
+  },
+  {
+    id: 7,
+    title: "Open Source ",
+    icon: <LuBookOpenCheck />,
+    link: "/notes/open-source-contribution",
+    description:
+      "Notes on contributing to open source projects, best practices, and resources.",
+    tags: ["Open Source", "Contribution", "Community"],
+  },
+  {
+    id: 8,
+    title: "Explore Feed",
+    icon: <MdExplore />,
+    link: "/notes/explore-feed",
+    description: "Discover new topics and insights from various feeds.",
+    tags: ["Explore", "Feeds", "Discovery"],
   },
 ];
