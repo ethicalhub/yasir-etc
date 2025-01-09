@@ -39,7 +39,7 @@ const HeroSection = () => {
         <SocialLink />
         <Link target="_blank" href="/Yasir_Frontend_Web_Developer_Resume.pdf">
           <Button icon={<HiOutlineDownload />} variant="primary">
-            My Resume
+            Resume
           </Button>
         </Link>
       </div>

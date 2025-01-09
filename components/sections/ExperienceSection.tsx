@@ -7,7 +7,7 @@ import ExperienceCard from "../uiComponent/ExperienceCard";
 
 const ExperienceSection = () => {
   return (
-    <section className="section-layout ">
+    <section id="work" className="section-layout ">
       <h3 className="section-title">
         <PiStudentBold />
         <span>Work Experience</span>

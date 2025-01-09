@@ -20,25 +20,27 @@ const Footer = () => {
     }
   }, [isCopied]);
   return (
-    <section className="section-layout items-center rounded-t-lg bg-dark !pb-0 !pt-12 text-secondary">
-      <div className="flex-align-center gap-4">
-        <Button
-          onClick={handleCopy}
-          variant="secondary"
-          className={
-            isCopied ? "border-2 border-green-700" : "border-secondary"
-          }
-        >
-          <FaCopy /> <span className="ml-2">Copy My Email</span>
-        </Button>
-      </div>
-      <div>
-        <SocialLink />
-        <p className="pb-2 pt-4 text-sm font-light">
-          &copy; {new Date().getFullYear()} yasir-etc. All rights reserved.
-        </p>
-      </div>
-    </section>
+    <div className="bg-dark">
+      <section className="section-layout container max-w-7xl items-center rounded-t-lg !pb-0 !pt-12 text-secondary">
+        <div className="flex-align-center gap-4">
+          <Button
+            onClick={handleCopy}
+            variant="secondary"
+            className={
+              isCopied ? "border-2 border-green-700" : "border-secondary"
+            }
+          >
+            <FaCopy /> <span className="ml-2">Copy My Email</span>
+          </Button>
+        </div>
+        <div>
+          <SocialLink />
+          <p className="pb-2 pt-4 text-sm font-light">
+            &copy; {new Date().getFullYear()} yasir-etc. All rights reserved.
+          </p>
+        </div>
+      </section>
+    </div>
   );
 };
 

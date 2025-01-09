@@ -5,7 +5,7 @@ import ContactForm from "../forms/ContactForm";
 
 const ContactMe = () => {
   return (
-    <section className="section-layout ">
+    <section id="contact" className="section-layout ">
       {/* Header Section */}
       <div className="items-center justify-between gap-4 md:flex">
         <h3 className="section-title">

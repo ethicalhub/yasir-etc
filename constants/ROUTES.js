@@ -2,6 +2,9 @@ export const ROUTES = {
   HOME: "/",
   BLOGS: "/blogs",
   RESOURCES: "/resources",
+  SERVICES: "/#services",
+  WORK: "/#work",
+  CONTACT: "/#contact",
 };
 
 export const SocialLinks = {

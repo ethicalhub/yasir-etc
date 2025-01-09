@@ -10,17 +10,19 @@ import SkillSection from "@/components/sections/SkillSection";
 
 export default function Home() {
   return (
-    <main className="container relative max-w-7xl">
+    <main className="relative">
       <Navbar />
-      <HeroSection />
-      <ExperienceSection />
-      <SkillSection />
-      <MyProjects />
-      <MyNotes />
-      {/* <TrendingFeed /> */}
+      <div className="container max-w-7xl">
+        <HeroSection />
+        <ExperienceSection />
+        <SkillSection />
+        <MyProjects />
+        <MyNotes />
+        {/* <TrendingFeed /> */}
 
-      <MyBlog />
-      <ContactMe />
+        <MyBlog />
+        <ContactMe />
+      </div>
       <Footer />
     </main>
   );
