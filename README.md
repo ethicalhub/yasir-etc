@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## My portfolio
 
-## Getting Started
+# Things to do
 
-First, run the development server:
+Contact Form
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Backend Form Validation
+- Rate limiting
+- Captcha
+- Data protection (sanitize form fields, message)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Phase1:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Blog Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- setup account on medium
+- see if there's a way to set it up using api
+- add custom filters, categories... to filter it on frontend
+- start writing blog
 
-## Learn More
+Notes Setup
 
-To learn more about Next.js, take a look at the following resources:
+- Choose between gitbook, notion or custom documentation page.
+- Static data, to start posting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Feed
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- start posting, statically
 
-## Deploy on Vercel
+Chatbot
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- For basic, contact us in the beginning... later it should start answering the relevant queries
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Phase 2:
+
+Notes Setup
+
+- Make syallabus (notes, roadmap, resources, quizzes, projects, interview questions, etc)
+
+Feed
+
+- it should be category wise divided, so I can accumulate the similar category post at one place.
+- Enable nsfw content
+- A rich text editor, which will allow me to submit text, <code>, emoji
+- People can share
+- Like, Comment option for people who has account
+
+Game Page
+
+- create some game on your own, and allow visitors to play
+
+Auth
+
+- create signup, loginpage
+- login using jwt, otp, 2FA etc
+- metamask(later)
+
+Deployment
+
+- Docker Image
+- Domain
+- Optimizations
+- Google Reports
+- Cross browser testing
+- Writing test cases
