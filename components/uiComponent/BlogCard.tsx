@@ -18,7 +18,9 @@ const BlogCard = ({ blog }) => {
         />
       </div>
       <div className="p-4">
-        <h4 className="line-clamp-1 text-lg text-secondary">{blog.title}</h4>
+        <h4 className="line-clamp-1 text-lg font-semibold text-secondary">
+          {blog.title}
+        </h4>
         <p className="mb-4 mt-2 line-clamp-2 text-sm text-dark">
           {blog.content}
         </p>

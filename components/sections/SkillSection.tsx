@@ -14,9 +14,9 @@ const SkillSection = () => {
       </h3>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-        <div className="col-span-2 row-span-2 flex flex-col justify-between gap-10 rounded-xl bg-white p-8 shadow-lg transition hover:shadow-xl">
+        <div className="flex flex-col justify-between gap-10 rounded-xl bg-white p-8 shadow-lg transition hover:shadow-xl md:col-span-2 md:row-span-2">
           <div>
-            <h3 className="mb-6 text-xl font-bold text-primary">
+            <h3 className="mb-6 text-lg font-semibold text-primary">
               Programming Skills:
             </h3>
             <div className="flex flex-wrap items-center gap-2">
@@ -32,7 +32,7 @@ const SkillSection = () => {
             </div>
           </div>
           <div>
-            <h3 className="mb-6 text-xl font-bold text-primary">
+            <h3 className="mb-6 text-lg font-semibold text-primary">
               Tools & DevOps:
             </h3>
             <div className="flex flex-wrap items-center gap-2">
@@ -51,7 +51,7 @@ const SkillSection = () => {
 
         {/* Service Card 1 */}
         <div className="rounded-xl bg-white p-6 shadow-lg transition hover:shadow-xl">
-          <h3 className="mb-2 text-xl font-bold text-primary">
+          <h3 className="mb-2 text-lg font-semibold text-primary">
             Custom UI/UX Development
           </h3>
           <ul className="text-sm text-dark">
@@ -65,7 +65,7 @@ const SkillSection = () => {
 
         {/* Service Card 2 */}
         <div className="rounded-xl bg-white p-6 shadow-lg transition hover:shadow-xl">
-          <h3 className="mb-2 text-xl font-bold text-primary">
+          <h3 className="mb-2 text-lg font-semibold text-primary">
             Full Stack Web Apps
           </h3>
           <ul className="text-sm text-dark">

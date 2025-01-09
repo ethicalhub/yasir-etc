@@ -4,7 +4,9 @@ const ExperienceCard = ({ data }) => {
   return (
     <div className="rounded-xl border border-secondary p-8 shadow-lg hover:shadow-xl">
       <div className="">
-        <p className="mb-2 text-2xl text-secondary">{data.role}</p>
+        <h2 className="mb-2 text-2xl font-medium text-secondary">
+          {data.role}
+        </h2>
         <p className="text-lg font-semibold text-primary">
           {data.company}
           <span className="pl-2 text-sm font-normal text-dark">

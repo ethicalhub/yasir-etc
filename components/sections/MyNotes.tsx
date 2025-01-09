@@ -29,7 +29,7 @@ const MyNotes = () => {
             >
               <div>
                 <span className="text-[45px]">{notes.icon}</span>
-                <h4 className="mb-2 mt-6 line-clamp-1 text-xl text-secondary">
+                <h4 className="mb-2 mt-6 line-clamp-1 text-lg font-semibold text-secondary">
                   {notes.title}
                 </h4>
                 <p className="mb-4 line-clamp-2 text-sm text-dark">

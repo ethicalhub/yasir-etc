@@ -16,7 +16,7 @@ const ProjectCard = ({ projectInfo }) => {
 
         {/* Project Details */}
         <div className="p-6">
-          <h2 className="mb-2 text-2xl text-secondary">
+          <h2 className="mb-2  text-2xl font-medium text-secondary">
             {projectInfo.project}
           </h2>
           <p className="mb-4 text-sm text-dark">{projectInfo.description}</p>
