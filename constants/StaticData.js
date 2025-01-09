@@ -112,3 +112,47 @@ export const blogs = [
     imageUrl: "/images/3dImage.jpg",
   },
 ];
+
+export const projectData = [
+  {
+    project: "BrightBells",
+    description:
+      "An e-learning platform connecting students with expert tutors for personalized subject-specific needs. Worked on client-side development and implemented Stripe payment integration.",
+    technologiesUsed: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "AuthJS",
+      "React Hook Form",
+      "Zod",
+      "Context",
+    ],
+    links: {
+      github: "https://github.com/ethicalhub/education_next",
+      liveDemo: "https://www.brightbells.com/",
+    },
+    image: "/images/3dImage.jpg",
+  },
+  {
+    project: "Micro-blogging Platform (In progress)",
+    description:
+      "Developing a dynamic community space using Next.js, TypeScript, MongoDB and Node.js, featuring NSFW filtration, private groups, and category-based feeds. AI Powered chatbot.",
+    technologiesUsed: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Express.js",
+      "MongoDB",
+      "Stripe",
+      "Docker",
+      "AuthJS",
+      "Metamask",
+      "Socket.io",
+    ],
+    links: {
+      github: "https://github.com/ethicalhub/yasir-etc",
+      liveDemo: "https://www.ethicals-lab.com/",
+    },
+    image: "/images/3dImage.jpg",
+  },
+];

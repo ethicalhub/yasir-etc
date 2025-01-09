@@ -1,7 +1,10 @@
 import React from "react";
 import { MdWorkspacesFilled } from "react-icons/md";
 
+import { projectData } from "@/constants/StaticData";
+
 import { Button } from "../uiComponent";
+import ProjectCard from "../uiComponent/ProjectCard";
 
 const MyProjects = () => {
   return (
@@ -14,6 +17,11 @@ const MyProjects = () => {
         <Button className="" variant="secondary">
           View All Projects
         </Button>
+      </div>
+      <div className="grid grid-cols-2 gap-6">
+        {projectData.map((item, index) => {
+          return <ProjectCard projectInfo={item} key={index} />;
+        })}
       </div>
     </section>
   );

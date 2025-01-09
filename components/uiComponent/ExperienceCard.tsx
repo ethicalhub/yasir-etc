@@ -1,11 +1,8 @@
 import React from "react";
 
-const ExperienceCard = ({ data, index }) => {
+const ExperienceCard = ({ data }) => {
   return (
-    <div
-      className="rounded-xl border border-secondary p-8 shadow-lg hover:shadow-xl"
-      style={{ marginTop: `${index}rem` }}
-    >
+    <div className="rounded-xl border border-secondary p-8 shadow-lg hover:shadow-xl">
       <div className="">
         <p className="mb-2 text-2xl text-secondary">{data.role}</p>
         <p className="text-lg font-semibold text-primary">

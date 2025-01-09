@@ -1,6 +1,8 @@
 import React from "react";
 import { MdConnectWithoutContact } from "react-icons/md";
 
+import ContactForm from "../forms/ContactForm";
+
 const ContactMe = () => {
   return (
     <div className="flex w-full flex-col gap-8 py-24">
@@ -10,6 +12,14 @@ const ContactMe = () => {
           <span>Get In Touch</span>
         </h3>
       </div>
+
+      <div className="grid grid-cols-2">
+        <ContactForm />
+      </div>
+      <p>
+        You can contact me using the form below or directly at:
+        [contact@yasir-etc.com]
+      </p>
     </div>
   );
 };
