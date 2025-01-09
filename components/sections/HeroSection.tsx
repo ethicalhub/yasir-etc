@@ -10,7 +10,7 @@ import SocialLink from "../uiComponent/SocialLink";
 const HeroSection = () => {
   const { height, width, src, alt } = ImageConstant.PROFILE_ICON;
   return (
-    <section className="flex min-h-[70vh] w-full flex-col justify-center gap-8 py-24  lg:w-3/4">
+    <section className="flex min-h-[70vh] w-full flex-col justify-center gap-8 py-24 ">
       <div className="flex-align-center gap-3">
         <Image
           className="size-16 rounded-full"
@@ -24,8 +24,8 @@ const HeroSection = () => {
           <p className="font-light">Frontend Developer | Next.js | Web3</p>
         </div>
       </div>
-      <div className="py-2">
-        <p className="w-full text-justify text-3xl font-extralight leading-snug">
+      <div className="grid grid-cols-3 py-2">
+        <p className="col-span-2 w-full text-justify text-3xl font-extralight leading-snug">
           A software engineer with <strong>3+ years of experience</strong> in
           frontend development using{" "}
           <strong>Javascript, ReactJS, NextJS</strong> and{" "}

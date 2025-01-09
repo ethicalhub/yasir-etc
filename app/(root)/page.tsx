@@ -14,11 +14,14 @@ export default function Home() {
     <main className="container relative max-w-7xl">
       <Navbar />
       <HeroSection />
+      <ExperienceSection />
       <SkillSection />
       <MyProjects />
-      <MyNotes />
-      <ExperienceSection />
-      <TrendingFeed />
+      <div className="grid grid-cols-2 gap-8">
+        <MyNotes />
+        <TrendingFeed />
+      </div>
+
       <MyBlog />
       <ContactMe />
       <Footer />

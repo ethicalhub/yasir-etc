@@ -14,7 +14,7 @@ export const workExperience = [
   {
     company: "Antino Labs",
     location: "Noida, India",
-    role: "Frontend Developer",
+    role: "MERN Developer",
     duration: "June 2021 – December 2021",
     projects: [
       {
@@ -32,7 +32,7 @@ export const workExperience = [
   {
     company: "Ethica Invest",
     location: "WFH",
-    role: "Frontend Development Intern",
+    role: "ReactJS Intern",
     duration: "December 2020 – June 2021",
     responsibilities: [
       "Created a new React-based web application with reusable components, stock charts, and live data integration using the Trading View API.",
