@@ -65,3 +65,50 @@ export const tools = [
   "Vercel",
   "ERC-20",
 ];
+
+export const blogs = [
+  {
+    id: 1,
+    title: "Introduction to JavaScript",
+    link: "https://medium.com/",
+    author: "John Doe",
+    date: "2025-01-09",
+    tags: ["JavaScript", "Programming", "Web Development"],
+    content:
+      "JavaScript is a versatile programming language used for web development...",
+    imageUrl: "/images/3dImage.jpg",
+  },
+  {
+    id: 2,
+    title: "Introduction to JavaScript",
+    link: "https://medium.com/",
+    author: "John Doe",
+    date: "2025-01-09",
+    tags: ["JavaScript", "Programming", "Web Development"],
+    content:
+      "JavaScript is a versatile programming language used for web development...",
+    imageUrl: "/images/3dImage.jpg",
+  },
+  {
+    id: 3,
+    title: "Introduction to JavaScript",
+    link: "https://medium.com/",
+    author: "John Doe",
+    date: "2025-01-09",
+    tags: ["JavaScript", "Programming", "Web Development"],
+    content:
+      "JavaScript is a versatile programming language used for web development...",
+    imageUrl: "/images/3dImage.jpg",
+  },
+  {
+    id: 4,
+    title: "Introduction to JavaScript",
+    link: "https://medium.com/",
+    author: "John Doe",
+    date: "2025-01-09",
+    tags: ["JavaScript", "Programming", "Web Development"],
+    content:
+      "JavaScript is a versatile programming language used for web development...",
+    imageUrl: "/images/3dImage.jpg",
+  },
+];
