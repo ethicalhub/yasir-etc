@@ -10,7 +10,7 @@ import SocialLink from "../uiComponent/SocialLink";
 const HeroSection = () => {
   const { height, width, src, alt } = ImageConstant.PROFILE_ICON;
   return (
-    <section className="flex min-h-[70vh] w-full flex-col justify-center gap-8 py-24 ">
+    <section className=" section-layout min-h-[70vh] justify-center">
       <div className="flex-align-center gap-3">
         <Image
           className="size-16 rounded-full"

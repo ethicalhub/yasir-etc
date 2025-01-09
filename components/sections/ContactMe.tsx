@@ -5,7 +5,7 @@ import ContactForm from "../forms/ContactForm";
 
 const ContactMe = () => {
   return (
-    <section className="flex w-full flex-col gap-8 py-24">
+    <section className="section-layout ">
       {/* Header Section */}
       <div className="items-center justify-between gap-4 md:flex">
         <h3 className="section-title">

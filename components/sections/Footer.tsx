@@ -20,8 +20,8 @@ const Footer = () => {
     }
   }, [isCopied]);
   return (
-    <section className="flex w-full flex-col items-center gap-8 rounded-t-lg bg-dark pt-8 text-secondary">
-      <div className="flex items-center gap-4">
+    <section className="section-layout items-center rounded-t-lg bg-dark !pb-0 !pt-12 text-secondary">
+      <div className="flex-align-center gap-4">
         <Button
           onClick={handleCopy}
           variant="secondary"

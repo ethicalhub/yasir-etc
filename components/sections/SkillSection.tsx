@@ -5,9 +5,7 @@ import { programmingSkills, tools } from "@/constants/StaticData";
 
 const SkillSection = () => {
   return (
-    <section className="flex w-full flex-col gap-8 py-24">
-      {/* Skills & Services Bento Grid Section */}
-
+    <section className="section-layout">
       <h3 className="section-title">
         <FaLaptopCode />
         <span>Skills & Services</span>

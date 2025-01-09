@@ -5,7 +5,7 @@ import { Button } from "../uiComponent";
 // Make it horizontal, floating like testimonial section...
 const TrendingFeed = () => {
   return (
-    <section className="flex w-full flex-col gap-8 py-24">
+    <section className="section-layout">
       <div className="items-center justify-between gap-4 md:flex">
         <h3 className="section-title">
           <CgFeed />

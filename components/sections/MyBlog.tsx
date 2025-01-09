@@ -8,7 +8,7 @@ import BlogCard from "../uiComponent/BlogCard";
 
 const MyBlog = () => {
   return (
-    <section className="flex w-full flex-col gap-8 py-24">
+    <section className="section-layout">
       <div className="title-with-action">
         <h3 className="section-title">
           <ImBlog />
