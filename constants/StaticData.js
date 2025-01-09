@@ -75,7 +75,7 @@ export const blogs = [
   {
     id: 1,
     title: "Introduction to JavaScript",
-    link: "https://medium.com/",
+    link: "https://yasir-etc.medium.com/",
     author: "John Doe",
     date: "2025-01-09",
     tags: ["JavaScript", "Programming", "Web Development"],
@@ -86,7 +86,7 @@ export const blogs = [
   {
     id: 2,
     title: "Introduction to JavaScript",
-    link: "https://medium.com/",
+    link: "https://yasir-etc.medium.com/",
     author: "John Doe",
     date: "2025-01-09",
     tags: ["JavaScript", "Programming", "Web Development"],
@@ -97,7 +97,7 @@ export const blogs = [
   {
     id: 3,
     title: "Introduction to JavaScript",
-    link: "https://medium.com/",
+    link: "https://yasir-etc.medium.com/",
     author: "John Doe",
     date: "2025-01-09",
     tags: ["JavaScript", "Programming", "Web Development"],
@@ -108,7 +108,7 @@ export const blogs = [
   {
     id: 4,
     title: "Introduction to JavaScript",
-    link: "https://medium.com/",
+    link: "https://yasir-etc.medium.com/",
     author: "John Doe",
     date: "2025-01-09",
     tags: ["JavaScript", "Programming", "Web Development"],

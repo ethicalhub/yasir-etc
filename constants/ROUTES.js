@@ -1,10 +1,11 @@
 export const ROUTES = {
   HOME: "/",
-  BLOGS: "/blogs",
+  BLOGS: "/#blogs",
   RESOURCES: "/resources",
   SERVICES: "/#services",
   WORK: "/#work",
   CONTACT: "/#contact",
+  EXT_BLOG: "https://medium.com/@yasir-etc",
 };
 
 export const SocialLinks = {

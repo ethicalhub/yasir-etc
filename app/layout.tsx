@@ -9,7 +9,7 @@ const outFit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio & Journal - @yasir-etc",
+  title: "Digital Etceteras of My Life - @yasir-etc",
   description:
     "Journaling my journey as a developer and accumulating my resources, revision notes, and blogs on tech, growth, and personal interests in one place. Join me in exploring and learning!",
 };
