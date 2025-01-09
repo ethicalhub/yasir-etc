@@ -137,16 +137,17 @@ const ContactForm = () => {
           >
             {isSubmitting ? "Sending..." : "Send Message"}
           </Button>
+
+          {formMessage && (
+            <p
+              className={`rounded-lg bg-blue p-2 text-lg font-bold  ${
+                formMessage.type === "success" ? "text-white" : "text-error"
+              }`}
+            >
+              {formMessage.text}
+            </p>
+          )}
         </div>
-        {formMessage && (
-          <p
-            className={`mt-4 rounded-lg bg-secondary p-2 text-lg   ${
-              formMessage.type === "success" ? "text-dark" : "text-error"
-            }`}
-          >
-            {formMessage.text}
-          </p>
-        )}
       </form>
     </>
   );
