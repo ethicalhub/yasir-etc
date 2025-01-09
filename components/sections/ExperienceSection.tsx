@@ -12,7 +12,7 @@ const ExperienceSection = () => {
         <PiStudentBold />
         <span>Work Experience</span>
       </h3>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3">
         {workExperience?.map((experience, index) => {
           return (
             <ExperienceCard

@@ -20,7 +20,7 @@ const Footer = () => {
     }
   }, [isCopied]);
   return (
-    <section className="flex w-full flex-col items-center gap-8 rounded-t-lg bg-dark px-12 pt-8 text-secondary">
+    <section className="flex w-full flex-col items-center gap-8 rounded-t-lg bg-dark pt-8 text-secondary">
       <div className="flex items-center gap-4">
         <Button
           onClick={handleCopy}
@@ -29,7 +29,7 @@ const Footer = () => {
             isCopied ? "border-2 border-green-700" : "border-secondary"
           }
         >
-          <FaCopy /> <span className="ml-2">Copy email to clipboard</span>
+          <FaCopy /> <span className="ml-2">Copy My Email</span>
         </Button>
       </div>
       <div>

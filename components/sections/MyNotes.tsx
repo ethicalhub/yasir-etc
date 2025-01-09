@@ -19,7 +19,7 @@ const MyNotes = () => {
         </Button>
       </div>
 
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
         {myNotesData?.map((notes) => {
           return (
             <Link
@@ -29,7 +29,7 @@ const MyNotes = () => {
             >
               <div>
                 <span className="text-[45px]">{notes.icon}</span>
-                <h4 className="mb-2 mt-6 text-xl text-secondary">
+                <h4 className="mb-2 mt-6 line-clamp-1 text-xl text-secondary">
                   {notes.title}
                 </h4>
                 <p className="line-clamp-2 text-sm">{notes.description}</p>

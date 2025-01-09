@@ -30,6 +30,9 @@ export default {
           md: "var(--container-padding-md)",
         },
       },
+      screens: {
+        xs: "480px",
+      },
     },
   },
   plugins: [],

@@ -24,8 +24,8 @@ const HeroSection = () => {
           <p className="font-light">Frontend Developer | Next.js | Web3</p>
         </div>
       </div>
-      <div className="grid grid-cols-3 py-2">
-        <p className="col-span-2 w-full text-justify text-3xl font-extralight leading-snug">
+      <div className="grid py-2 sm:grid-cols-3">
+        <p className="w-full text-xl font-extralight leading-snug sm:col-span-2 sm:text-justify sm:text-2xl md:text-3xl">
           A software engineer with <strong>3+ years of experience</strong> in
           frontend development using{" "}
           <strong>Javascript, ReactJS, NextJS</strong> and{" "}

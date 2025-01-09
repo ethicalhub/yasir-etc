@@ -5,7 +5,8 @@ import ContactForm from "../forms/ContactForm";
 
 const ContactMe = () => {
   return (
-    <div className="flex w-full flex-col gap-8 py-24">
+    <section className="flex w-full flex-col gap-8 py-24">
+      {/* Header Section */}
       <div className="items-center justify-between gap-4 md:flex">
         <h3 className="flex-align-center gap-4 text-4xl text-primary">
           <MdConnectWithoutContact />
@@ -13,14 +14,13 @@ const ContactMe = () => {
         </h3>
       </div>
 
-      <div className="grid grid-cols-2">
-        <ContactForm />
+      {/* Form Section */}
+      <div className="grid gap-8 md:grid-cols-2">
+        <div>
+          <ContactForm />
+        </div>
       </div>
-      <p>
-        You can contact me using the form below or directly at:
-        [contact@yasir-etc.com]
-      </p>
-    </div>
+    </section>
   );
 };
 

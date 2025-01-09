@@ -18,7 +18,7 @@ const MyProjects = () => {
           View All Projects
         </Button>
       </div>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 gap-4 md:gap-6 lg:grid-cols-2">
         {projectData.map((item, index) => {
           return <ProjectCard projectInfo={item} key={index} />;
         })}

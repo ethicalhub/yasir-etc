@@ -19,7 +19,7 @@ const MyBlog = () => {
         </Button>
       </div>
 
-      <div className="grid grid-cols-4 items-center gap-6">
+      <div className="grid grid-cols-1 items-center gap-4 xs:grid-cols-2 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
         {blogs.map((blog) => {
           return <BlogCard key={blog.id} blog={blog} />;
         })}
