@@ -16,7 +16,7 @@ const MyBlog = () => {
           <ImBlog />
           <span>Blogs & Interesting articles</span>
         </h3>
-        <Link href={ROUTES.EXT_BLOG}>
+        <Link target="_blank" href={ROUTES.EXT_BLOG}>
           <Button className="" variant="secondary">
             View All Blogs
           </Button>
