@@ -1,6 +1,18 @@
 import React from "react";
 
-const ExperienceCard = ({ data }) => {
+type JobExperience = {
+  company?: string;
+  location?: string;
+  role?: string;
+  duration?: string;
+  responsibilities?: string[];
+  projects?: {
+    name: string;
+    details: string;
+  }[];
+};
+
+const ExperienceCard = ({ data }: { data: JobExperience }) => {
   return (
     <div className="rounded-xl border border-secondary p-8 shadow-lg hover:shadow-xl">
       <div className="">

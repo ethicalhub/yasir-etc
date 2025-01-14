@@ -2,7 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const BlogCard = ({ blog }) => {
+type Article = {
+  id?: number;
+  title: string;
+  link: string;
+  author?: string;
+  date?: string;
+  tags?: string[];
+  content?: string;
+  imageUrl: string;
+};
+
+const BlogCard = ({ blog }: { blog: Article }) => {
   return (
     <Link
       href={blog.link}

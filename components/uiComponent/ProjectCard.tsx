@@ -1,7 +1,18 @@
 import Image from "next/image";
 import React from "react";
 
-const ProjectCard = ({ projectInfo }) => {
+type Project = {
+  project: string;
+  description?: string;
+  technologiesUsed: string[];
+  links: {
+    github: string;
+    liveDemo: string;
+  };
+  image: string;
+};
+
+const ProjectCard = ({ projectInfo }: { projectInfo: Project }) => {
   return (
     <section className="rounded-lg border border-secondary  shadow-lg  hover:shadow-xl">
       <div className="transition duration-300">
