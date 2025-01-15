@@ -4,9 +4,9 @@ import UserFeedCard from "../uiComponent/userFeedCard";
 
 const Post = ({ post }: { post: PostType }) => {
   return (
-    <div key={post.id} className="max-w-2xl rounded-xl bg-white p-6">
+    <div key={post.id} className="max-w-2xl rounded-xl bg-white px-8 py-6">
       <UserFeedCard size={"small"} />
-      <p className="my-6 w-full text-lg font-light">{post.content}</p>
+      <div className="my-6 w-full text-lg font-light">{post.content}</div>
       <h2 className="text-secondary">{post.title}</h2>
       <div className="mt-2 flex items-center justify-between">
         <small className="">Tags: {post.tags.join(", ")}</small>

@@ -10,7 +10,7 @@ const UserFeedCard = ({ size = "large" }) => {
     <div className="flex-align-center gap-3">
       <Image
         className={clsx(
-          size === "large" ? `size-16 rounded-full` : `size-14 rounded-full`,
+          size === "large" ? `size-16 rounded-full` : `size-12 rounded-full`,
         )}
         src={src}
         alt={alt}
@@ -18,10 +18,18 @@ const UserFeedCard = ({ size = "large" }) => {
         width={width}
       />
       <div>
-        <h2 className="text-lg tracking-wide sm:text-xl">Yasir Ahmad Ansari</h2>
+        <h2
+          className={clsx(
+            size === "large"
+              ? "text-lg tracking-wide sm:text-xl"
+              : "text-base tracking-wide",
+          )}
+        >
+          Yasir Ahmad Ansari
+        </h2>
         <p
           className={clsx(
-            size === "large" ? `font-light` : `text-sm font-light`,
+            size === "large" ? `font-light` : `text-xs font-light`,
           )}
         >
           Frontend Developer | Next.js | Web3

@@ -1,9 +1,11 @@
-export type PostType = {
-  id: number | string;
+import React from "react";
+
+export interface PostType {
+  id: number;
   title: string;
-  content: string;
+  content: React.ReactNode;
   category: string;
   tags: string[];
   createdAt: string;
-  parentId?: number | null;
-};
+  parentId: number | null;
+}
