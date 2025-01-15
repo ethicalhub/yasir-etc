@@ -4,7 +4,7 @@ import { SiSecurityscorecard } from "react-icons/si";
 import Post from "@/components/feed/Post";
 import { PostType } from "@/constants/Types";
 // ✅
-const posts = [
+const posts: PostType[] = [
   {
     id: 0,
     title: "Pre Launch - static posts",
@@ -205,7 +205,7 @@ const MyPosts = async () => {
         <SiSecurityscorecard />
         <span>My Posts</span>
       </h3>
-      {posts?.map((post: PostType) => {
+      {posts?.map((post) => {
         return <Post key={post.id} post={post} />;
       })}
     </section>

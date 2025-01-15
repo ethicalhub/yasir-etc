@@ -2,7 +2,7 @@ import React from "react";
 
 export interface PostType {
   id: number;
-  title: string;
+  title: React.ReactNode;
   content: React.ReactNode;
   category: string;
   deadline?: string;
