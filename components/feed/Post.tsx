@@ -17,7 +17,6 @@ const Post = ({ post }: { post: PostType }) => {
           {post.category.toLowerCase()}
         </small>
       </div>
-      {/* {post.parentId && <p>Reply to Post ID: {post.parentId}</p>} */}
     </div>
   );
 };
