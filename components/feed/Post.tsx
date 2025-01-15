@@ -1,11 +1,8 @@
-import React from "react";
-
 import { PostType } from "@/constants/Types";
 
 import UserFeedCard from "../uiComponent/userFeedCard";
 
 const Post = ({ post }: { post: PostType }) => {
-  console.log("post", post);
   return (
     <div key={post.id} className="max-w-2xl rounded-xl bg-white p-6">
       <UserFeedCard size={"small"} />
