@@ -53,26 +53,39 @@ const posts = [
   },
   {
     id: 2,
-    title: "Things to do in Portfolio Feed",
+
+    title: (
+      <p>
+        Here&apos;s the list of things that need to be done in Brightbells by
+        the end of this week to get it ready for deployment.
+      </p>
+    ),
     deadline: "25th Jan",
     content: (
-      <ul className="list-outside text-sm">
-        <li>- Create mongodb & post model</li>
-        <li>- Create express server</li>
-        <li>- Implement Auth (google, otp) </li>
-        <li>- Route & Action Protection </li>
-        <li>- Implement search, filter using categories and tags</li>
-        <li>- Fix feed UI (make it better) </li>
-        <li>- Content Rich Text Editor for Feed</li>
-        <li>- Add blog, notes, todo cards on the right side(on feed page)</li>
-        <li>- Deploy with Docker on vercel, with custom domain name</li>
-        <li>- Add AI powered Chatbot</li>
-        <li>- Add Goals/Task Management Feature</li>
-        <li>- Add like, save, comment option, date of posting</li>
-        <li>- Same categories post, should bundle up together.</li>
-        <li>- Implement Infinity Scrolling.</li>
-        <li>- Add Tanstack Query.</li>
-      </ul>
+      <>
+        {" "}
+        <p>
+          Here&apos;s the list of things that need to be done in my portfolio by
+          the end of this week + 1, to get my project ready up and running.
+        </p>
+        <ul className="list-outside text-sm">
+          <li>- Create mongodb & post model</li>
+          <li>- Create express server</li>
+          <li>- Implement Auth (google, otp) </li>
+          <li>- Route & Action Protection </li>
+          <li>- Implement search, filter using categories and tags</li>
+          <li>- Fix feed UI (make it better) </li>
+          <li>- Content Rich Text Editor for Feed</li>
+          <li>- Add blog, notes, todo cards on the right side(on feed page)</li>
+          <li>- Deploy with Docker on vercel, with custom domain name</li>
+          <li>- Add AI powered Chatbot</li>
+          <li>- Add Goals/Task Management Feature</li>
+          <li>- Add like, save, comment option, date of posting</li>
+          <li>- Same categories post, should bundle up together.</li>
+          <li>- Implement Infinity Scrolling.</li>
+          <li>- Add Tanstack Query.</li>
+        </ul>
+      </>
     ),
     category: "Portfolio",
     tags: ["MongoDB", "NextJS"],
