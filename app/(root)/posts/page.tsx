@@ -5,7 +5,7 @@ import Post from "@/components/feed/Post";
 import { PostType } from "@/constants/Types";
 
 const MyPosts = async () => {
-  const response = await fetch(`${process.env.NEXT_APP_URL}/api/posts`);
+  const response = await fetch(`/api/posts`);
   if (!response.ok) {
     throw new Error("Failed to fetch posts");
   }
