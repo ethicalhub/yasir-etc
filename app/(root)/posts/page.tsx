@@ -3,41 +3,63 @@ import { SiSecurityscorecard } from "react-icons/si";
 
 import Post from "@/components/feed/Post";
 import { PostType } from "@/constants/Types";
+// ✅
 const posts = [
+  {
+    id: 0,
+    title: "Pre Launch - static posts",
+    deadline: "1st March",
+    content: (
+      <p>
+        Welcome to my feed! Here, I&apos;ll share my journey—learnings, goals,
+        projects, and snippets of everyday life. Stay tuned for updates that
+        inspire, challenge, and maybe even entertain!
+      </p>
+    ),
+    category: "yasir-etc",
+    tags: ["Updates", "Journal"],
+    createdAt: new Date().toISOString(),
+  },
   {
     id: 1,
     title: "Things to do in Brightbells",
+    deadline: "18th Jan",
     content: (
-      <ul className="list-outside">
-        <li className="text-sm">- Responsiveness</li>
-        <li className="text-sm">- Add Consent Banner</li>
-        <li className="text-sm">- Google Analytics</li>
-        <li className="text-sm">- Razorpay integration</li>
-        <li className="text-sm">- Account Creation Logic (test)</li>
-        <li className="text-sm">- Optimizations</li>
-        <li className="text-sm">- Fix Location cookies issue</li>
-        <li className="text-sm">- Google Analytics</li>
-        <li className="text-sm">- Student dashboard features</li>
-        <li className="text-sm">- Testing all pages and features</li>
-        <li className="text-sm">
-          - Book a demo form (test with your id, support@brightbells.com)
-        </li>
-      </ul>
+      <>
+        <p>
+          Here&apos;s the list of things that need to be done in Brightbells by
+          the end of this week to get it ready for deployment.
+        </p>
+        <ul className="my-2 list-outside">
+          <li className="text-sm">❌ Make the platform responsive.</li>
+          <li className="text-sm">❌ Add a consent banner.</li>
+          <li className="text-sm">❌ Integrate Google Analytics.</li>
+          <li className="text-sm">❌ Add Razorpay payments.</li>
+          <li className="text-sm">❌ Test account creation logic.</li>
+          <li className="text-sm">❌ Optimize site performance.</li>
+          <li className="text-sm">❌ Fix location cookie issues.</li>
+          <li className="text-sm">❌ Build student dashboard features.</li>
+          <li className="text-sm">❌ Test all pages and features.</li>
+          <li className="text-sm">❌ Discount logic.</li>
+          <li className="text-sm">
+            ❌ Test Book a Demo form - email to (support@brightbells.com).
+          </li>
+        </ul>
+      </>
     ),
     category: "Brightbells",
-    tags: ["Curriculum", "Feedback", "Marketing"],
+    tags: ["Razorpay", "Google Analytics"],
     createdAt: new Date().toISOString(),
   },
-
   {
     id: 2,
     title: "Things to do in Portfolio Feed",
+    deadline: "25th Jan",
     content: (
       <ul className="list-outside text-sm">
-        <li>- Create database & post model</li>
-        <li>- Create Express Server</li>
+        <li>- Create mongodb & post model</li>
+        <li>- Create express server</li>
         <li>- Implement Auth (google, otp) </li>
-        <li>- Route & Action Protection </li>
         <li>- Route & Action Protection </li>
         <li>- Implement search, filter using categories and tags</li>
         <li>- Fix feed UI (make it better) </li>
@@ -47,70 +69,119 @@ const posts = [
         <li>- Add AI powered Chatbot</li>
         <li>- Add Goals/Task Management Feature</li>
         <li>- Add like, save, comment option, date of posting</li>
-        <li>Same categories post, should bundle up together.</li>
+        <li>- Same categories post, should bundle up together.</li>
+        <li>- Implement Infinity Scrolling.</li>
+        <li>- Add Tanstack Query.</li>
       </ul>
     ),
     category: "Portfolio",
-    tags: ["UI/UX", "MongoDB", "NextJS", "Chatbot"],
+    tags: ["MongoDB", "NextJS"],
     createdAt: new Date().toISOString(),
   },
-
   {
     id: 3,
-    title: "Upskilling ToDo",
+    title: "Data Structure & Algorithms",
+    deadline: "25th Jan",
     content: (
       <ul className="list-outside">
-        <li className="text-sm">- Complete TypeScript advanced course.</li>
-        <li className="text-sm">- Practice DSA problems daily.</li>
-        <li className="text-sm">- Build a small project using GraphQL.</li>
+        <li className="text-sm">- Complete DSA from 30dayscoding.</li>
+        <li className="text-sm">- Practice DSA problems.</li>
+        <li className="text-sm">
+          - Update notes of DSA on (https://learning-etc.vercel.app/).
+        </li>
       </ul>
     ),
     category: "Upskilling",
-    tags: ["TypeScript", "DSA", "GraphQL"],
+    tags: ["DSA", "Javascript"],
     createdAt: new Date().toISOString(),
   },
   {
     id: 4,
     title: "Chatbot ToDo",
+    deadline: "31st,Jan",
     content: (
       <ul className="list-outside">
-        <li className="text-sm">- Implement intent recognition system.</li>
-        <li className="text-sm">- Add support for multiple languages.</li>
-        <li className="text-sm">- Test integration with APIs.</li>
+        <li className="text-sm">
+          - Learn about rag, llm, langchain.js, vector databases, ai package.
+          (Understand the eco system)
+        </li>
+        <li className="text-sm">
+          - Create a simple chat application with your resume info, dsa
+          knowledge and keep updating it.
+        </li>
+        <li className="text-sm">- Create a npm package of Chatbot.</li>
       </ul>
     ),
     category: "Features",
-    tags: ["Chatbot", "APIs", "AI"],
+    tags: ["Chatbot", "AI"],
     createdAt: new Date().toISOString(),
   },
   {
     id: 5,
-    title: "Notes ToDo",
+    title: "Upcoming tasks",
+    deadline: "10th,Feb",
     content: (
       <ul className="list-outside">
-        <li className="text-sm">- Organize research on blockchain topics.</li>
-        <li className="text-sm">- Review past meeting notes for insights.</li>
-        <li className="text-sm">
-          - Create a summary for recent tech articles.
-        </li>
+        <li className="text-sm">- System Design (frontend).</li>
+        <li className="text-sm">- Interview Preparation.</li>
+        <li className="text-sm">- Machine Coding Practice.</li>
+        <li className="text-sm">- Upskilling ReactJS, NextJS.</li>
+        <li className="text-sm">- Web3, Ethereum, Blockchain</li>
+        <li className="text-sm">- Framer motion, </li>
       </ul>
     ),
     category: "Notes",
-    tags: ["Blockchain", "Research", "Summaries"],
+    tags: ["Research", "Summaries"],
     createdAt: new Date().toISOString(),
   },
   {
     id: 6,
     title: "Blog ToDo",
+    deadline: "18th Feb",
     content: (
       <ul className="list-outside">
-        <li className="text-sm">- Draft the blog on Web3 adoption.</li>
-        <li className="text-sm">- Proofread the article on AI advancements.</li>
+        <li className="text-sm">- Create a plan for content creation.</li>
+        <li className="text-sm">
+          - Keep updating your feed, regaring daily tracking goals.
+        </li>
         <li className="text-sm">- Schedule publishing for Frontend Tips.</li>
       </ul>
     ),
     category: "Blog",
-    tags: ["Web3", "AI", "Frontend"],
+    tags: ["AI", "Frontend"],
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 7,
+    title: "Ethicals Lab",
+    deadline: "28th Feb",
+    content: (
+      <ul className="list-outside">
+        <li className="text-sm">- Hire Interns.</li>
+        <li className="text-sm">- Create platform.</li>
+        <li className="text-sm">- Quizzes, multistep form, etc.</li>
+      </ul>
+    ),
+    category: "Blog",
+    tags: ["Frontend"],
+    createdAt: new Date().toISOString(),
+  },
+  {
+    id: 8,
+    title: "Building Projects",
+    deadline: "---",
+    content: (
+      <ul className="list-outside">
+        <li className="text-sm">- Portfolio with feed, ToDo .</li>
+        <li className="text-sm">- Chatbot based on my portfolio.</li>
+        <li className="text-sm">- Quiz Application (ethicals)</li>
+        <li className="text-sm">- Use of Socket.io </li>
+        <li className="text-sm">- Decentralize Application</li>
+        <li className="text-sm">- Build Projects</li>
+      </ul>
+    ),
+    category: "Project",
+    tags: ["Frontend, Fullstack"],
     createdAt: new Date().toISOString(),
   },
 ];
