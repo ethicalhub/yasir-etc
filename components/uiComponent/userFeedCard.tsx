@@ -5,7 +5,6 @@ import React from "react";
 import { ImageConstant } from "@/constants/ImageConstants";
 
 const UserFeedCard = ({ size = "large" }) => {
-  console.log(size);
   const { height, width, src, alt } = ImageConstant.PROFILE_ICON;
   return (
     <div className="flex-align-center gap-3">

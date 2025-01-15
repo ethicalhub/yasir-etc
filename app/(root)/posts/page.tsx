@@ -5,11 +5,12 @@ import Post from "@/components/feed/Post";
 import { PostType } from "@/constants/Types";
 
 const MyPosts = async () => {
-  const response = await fetch(`${process.env.NEXT_APP_URL}/postsdata.json`);
+  const response = await fetch(`${process.env.NEXT_APP_URL}/api/posts`);
   if (!response.ok) {
     throw new Error("Failed to fetch posts");
   }
   const posts = await response.json();
+  console.log(response);
   return (
     <section className="section-layout ">
       <h3 className="section-title">
