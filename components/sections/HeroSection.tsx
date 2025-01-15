@@ -1,29 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineDownload } from "react-icons/hi";
 
-import { ImageConstant } from "@/constants/ImageConstants";
-
 import { Button } from "../uiComponent";
 import SocialLink from "../uiComponent/SocialLink";
+import UserFeedCard from "../uiComponent/userFeedCard";
 
 const HeroSection = () => {
-  const { height, width, src, alt } = ImageConstant.PROFILE_ICON;
   return (
     <section className=" section-layout min-h-[70vh] justify-center">
-      <div className="flex-align-center gap-3">
-        <Image
-          className="size-16 rounded-full"
-          src={src}
-          alt={alt}
-          height={height}
-          width={width}
-        />
-        <div>
-          <h2 className="text-xl tracking-wide">Yasir Ahmad Ansari</h2>
-          <p className="font-light">Frontend Developer | Next.js | Web3</p>
-        </div>
-      </div>
+      <UserFeedCard />
       <div className="grid py-2 sm:grid-cols-3">
         <p className="w-full text-xl font-extralight leading-snug sm:col-span-2 sm:text-justify sm:text-2xl md:text-3xl">
           A software engineer with <strong>3+ years of experience</strong> in
