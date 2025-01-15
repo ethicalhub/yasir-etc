@@ -5,6 +5,7 @@ export const ROUTES = {
   SERVICES: "/#services",
   WORK: "/#work",
   CONTACT: "/#contact",
+  POSTS: "/posts",
   EXT_BLOG: "https://medium.com/@yasir-etc",
 };
 

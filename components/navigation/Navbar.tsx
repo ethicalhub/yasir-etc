@@ -43,8 +43,8 @@ const NavLinks = [
 const NavActions = [
   {
     id: 1,
-    title: "Feed",
-    path: ROUTES.HOME,
+    title: "Posts",
+    path: ROUTES.POSTS,
     variant: "outline",
     icon: <CgFeed />,
   },
