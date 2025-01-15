@@ -41,6 +41,7 @@ const posts: PostType[] = [
           <li className="text-sm">❌ Build student dashboard features.</li>
           <li className="text-sm">❌ Test all pages and features.</li>
           <li className="text-sm">❌ Discount logic.</li>
+          <li className="text-sm">❌ Add animations.</li>
           <li className="text-sm">
             ❌ Test Book a Demo form - email to (support@brightbells.com).
           </li>
@@ -84,6 +85,7 @@ const posts: PostType[] = [
           <li>- Same categories post, should bundle up together.</li>
           <li>- Implement Infinity Scrolling.</li>
           <li>- Add Tanstack Query.</li>
+          <li>- Daily reminder on right side...</li>
         </ul>
       </>
     ),
