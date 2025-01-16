@@ -11,8 +11,9 @@ const posts: PostType[] = [
     deadline: "1st March",
     content: (
       <p>
-        Welcome to my courses page! Here, I will update and track the courses I
-        am enrolled in with the deadlines to catchup and follow
+        Welcome to my upskilling page! Here, I will update and track the
+        courses, skills and projects I am enrolled in with the deadlines to
+        catchup and follow
       </p>
     ),
     category: "yasir-etc",
